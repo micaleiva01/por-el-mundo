@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Por el Mundo: Un Blog de Viajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&family=Oswald&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+    <div id="main">
+
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+
+          <div class="container">
+
+              <button type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
+              class="navbar-toggler" aria-controls="#navigationBar" aria-expanded="false" aria-label="toggle navigationBar">
+              <span class="navbar-toggler-icon"></span></button>
+
+              <div class="collapse navbar-collapse" id="navigationBar">
+
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white me-2" href="#">Inicio</a>
+                  </li>
+
+                  <div class="vr"></div>
+
+                   <li class="nav-item active">
+                     <a class="nav-link text-white px-4" href="#">Destinos</a>
+                   </li>
+
+                   <div class="vr"></div>
+
+                   <li class="nav-item active">
+                    <a class="nav-link text-white ms-2" href="#">Contacto</a>
+                   </li>
+                </div>
+
+                <div class="logo list-unstyled">
+                  <a class="nav-link" href="#">POR EL MUNDO</a>
+                </div>
+                   <!-- <li class="nav-item dropdown active">
+                     <a href="#" class="nav-link dropdown-toggle"
+                     id="navigationDropdown" role="button" data-bs-toggle="dropdown"
+                     >Blog</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <li><a href="#" class="dropdown-item">Item #1</a></li>
+                       <li><a href="#" class="dropdown-item">Item #2</a></li>
+                       <li><a href="#" class="dropdown-item">Item #3</a></li>
+                   </li> -->
+                </ul>
+          </div>
+        </nav>
+
+            <div id="intro">
+
+              <div class="d-flex flex-column justify-content-center align-items-center"
+                  style="background-image: url('img/background.jpg');
+                  height: 100vh; background-size: cover;">
+
+                <h1 id="title" class="text-center text-white px-5 mb-3">Por el Mundo: Un Blog de Viajes</h1>
+
+                <div class="d-grid gap-2">
+                  <button id="btn" type="button" class="btn btn-outline-light btn-lg m-2">Comenzar</button>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div id="page" class="card m-5">
+              <div class="row">
+                  <div class="col-md-4">
+                    <img src="img/headshot.jpg" class="headshot img-fluid p-2 min-vh-50 d-flex align-items-center" alt="headshot">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Biografía</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et Praesent tristique magna sit amet purus gravida quis blandit turpis. Egestas sed tempus urna et pharetra pharetra massa massa. Pellentesque nec nam aliquam sem et tortor consequat. Quis commodo odio aenean sed. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Id diam vel quam elementum pulvinar etiam non quam. Enim ut tellus elementum sagittis vitae. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Lacus viverra vitae congue eu consequat ac felis.</p>  
+                      <button class="btn btn-outline-dark">Leer Mas</button>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+
+
+                <div>
+
+                  <h1 class="text-center m-3 mb-5">Destinos Destacados</h1>
+
+                    <div>
+                      <a href="#">
+                        <img src="img/buenosaires.jpg" id="buenosAiresPhoto" class="img-fluid m-0" style="width: auto;" alt="Responsive image">              
+                      </a>
+                      <p id="buenosAiresText">The city of Buenos Aires is neither part of Buenos Aires Province nor the Province's capital; rather, it is an autonomous district. In 1880, after decades of political infighting, Buenos Aires was federalized and removed from Buenos Aires Province.[13] The city limits were enlarged to include the towns of Belgrano and Flores; both are now neighborhoods of the city.</p>
+                    </div>
+      
+                    <div>
+                      <a href="#">
+                        <img src="img/nuevazelanda.jpg" class="nuevazelanda img-fluid" style="width: auto; max-width: auto;" alt="Responsive image">               
+                      </a>
+                    </div>
+      
+                    <div>
+                      <a href="#">
+                        <img src="img/algarve.jpg" class="algarve img-fluid m-0" style="width: auto;" alt="Responsive image">                
+                      </a>
+                    </div>
+      
+                    <div>
+                      <a href="#">
+                        <img src="img/madrid.JPEG" class="madrid img-fluid" style="width: auto;" alt="Responsive image">                
+                      </a>
+                    </div>
+
+                </div>   
+
+
+    </div> <!--end of main-->
+    
+    <script src="scripts/main.js"></script>
+  </body>
+
+  </html>

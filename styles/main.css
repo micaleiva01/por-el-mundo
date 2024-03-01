@@ -1,0 +1,28 @@
+body {
+  color: #000;
+  background-image: rgb(247, 226, 206) ;
+  font-family: Roboto, Calibri, sans-serif;
+}
+
+h1, h3 {
+  font-family: Oswald, Cambria, serif;
+}
+
+#map2 {
+  border: 5px solid #000;
+  height: 500px;
+}
+
+.navbar {
+  color: #fff;
+}
+
+footer {
+  font-family: Roboto, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.headshot {
+  border-radius: 15px;
+}
