@@ -1,28 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #000;
   background-image: rgb(247, 226, 206) ;
   font-family: Roboto, Calibri, sans-serif;
 }
 
-h1, h3 {
-  font-family: Oswald, Cambria, serif;
+h1, h3, h5 {
+  font-family: Oswald, Cambria, sans-serif;
 }
 
-#map2 {
-  border: 5px solid #000;
-  height: 500px;
+p {
+  font-family: Cardo, serif;
 }
 
-.navbar {
-  color: #fff;
+nav {
+  font-family: 'Josefin Sans', 'sans-serif';
 }
 
 footer {
-  font-family: Roboto, sans-serif;
-  background: #000;
-  color: #fff;
+  font-family: 'Josefin Sans', 'sans-serif';
 }
 
-.headshot {
+.headshot, .plane, .faro {
   border-radius: 15px;
+}
+
+button:hover{
+  cursor: pointer
+}
+
+#btn {
+  transition: transform 0.5s ease;
+}
+
+#btn:active {
+  transform: scale(0.96);
+}
+
+.thumbnailRight, .thumbnailLeft {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnailRight, .thumbnailLeft, img {
+  width: 100%;
+  transition: transform 0.8s ease;
+}
+
+.thumbnailTextRight {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  width: 40%;
+  color:#000;
+  transition: right 1s ease;
+  z-index: -1;
+}
+
+.thumbnailTextLeft {
+  position: absolute;
+  top: 0;
+  right: 60%;
+  width: 40%;
+  color:#000;
+  transition: left 1s ease;
+  z-index: -1;
+}
+
+.thumbnailRight:hover img {
+  transform: translateX(-40%);
+}
+
+.thumbnailLeft:hover img {
+  transform: translateX(40%);
+}
+
+.thumbnailRight:hover .thumbnailTextRight{
+  right: 0;
+}
+
+.thumbnailLeft:hover .thumbnailTextLeft{
+  left: 0;
+}
+
+@media (max-width: 1199px){
+  .thumbnailLeft, .thumbnailRight {
+      
+  }
 }

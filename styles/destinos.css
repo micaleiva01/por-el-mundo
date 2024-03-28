@@ -1,0 +1,38 @@
+* {
+  font-family: Roboto, Calibri, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: #000;
+  background-color: antiquewhite;
+}
+
+h2, h6 {
+  font-family: 'Josefin Sans', 'Cambria', serif;
+}
+
+.column2 p {
+  font-family: Cardo, sans-serif;
+}
+
+footer {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+  font-family: 'Josefin Sans', 'sans-serif';
+}
+
+div.scroll {
+  margin: 4px, 4px;
+  padding: 4px;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}

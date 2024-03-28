@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h6, a {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, p, h3 {
+    font-family: 'Cardo', serif;
+}
+
+a:hover {
+   text-decoration: underline;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Por el Mundo: Destinos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&family=Oswald&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="d-flex flex-column justify-content-center align-items-center"
+style="background-image: url('img/plane2.jpg');
+height: 100vh; background-size: cover;">
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark nav-colored nav-transparent px-5" style="color: #fff;">
+            <a class="nav-link" href="index.html">POR EL MUNDO</a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" 
+            data-bs-target="#navigationBar" aria-controls="#navigationBar" 
+            aria-expanded="bg-secondary" aria-label="toggle navigationBar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigationBar">
+
+                <ul class="navbar-nav ms-auto pe-5">
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Inicio</a>
+                    </li>
+
+                    <div class="vr mx-2"></div>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="destinos.html">Destinos</a>
+                    </li>
+
+                    <div class="vr mx-2"></div>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#footer">Contacto</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown active">
+                    <a href="#" class="nav-link dropdown-toggle"
+                    id="navigationDropdown" role="button" data-bs-toggle="dropdown"
+                    >Blog</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Item #1</a></li>
+                        <li><a href="#" class="dropdown-item">Item #2</a></li>
+                        <li><a href="#" class="dropdown-item">Item #3</a></li>
+                    </li> -->
+                </ul>
+        </div>
+    </nav>
+
+
+    <div>
+        <h1 class="text-white">Destinos</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="buenosaires.html">buenos aires</a>
+    </div>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="rotorua.html">rotorua</a>
+    </div>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="madrid.html">madrid</a>
+    </div>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="algarve.html">algarve</a>
+    </div>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="boston.html">boston</a>
+    </div>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="grancanon.html">gran cañon</a>
+    </div>
+
+    <div class="text-white">
+        <a class="nav-link text-white p-1" href="sanfrancisco.html">san francisco</a>
+    </div>
+    
+
+</div>
+
+<footer id="footer" class="m-5">
+
+    <br>
+    <hr class="line mx-5"/>
+
+  <section class="mb-4">
+
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
+
+        <p class="text-center w-responsive mx-auto mb-5">Estemos en contacto! Para mensajes y consultas llenar el formulario a continuacion: </p>
+
+        <div class="row">
+
+    <div class="align-items-center mb-md-0 mb-5">
+        <form id="formulario" name="formulario" action="contacto.php" method="POST">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="md-form mb-2">
+                      <label for="name" class="">Nombre</label>
+                      <input type="text" id="nombre" name="nombre" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="md-form mb-2">
+                      <label for="email" class="">Email</label>
+                      <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-2">
+                      <label for="subject" class="">Asunto</label>
+                      <input type="text" id="subject" name="subject" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="md-form mb-2">
+                      <label for="message">Mensaje</label>
+                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+        <div class="text-center text-md-left">
+            <a class="btn btn-primary m-3" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+        </div>
+        <div class="status"></div>
+    </div>
+
+    <h6 class="text-center p-3">Página web creada por Micaela Leiva. Se reservan todos los derechos de autor. <br>
+    <a href="#">Click aqui</a> para ver repositorio de GitHub.</h6>
+
+  </footer>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

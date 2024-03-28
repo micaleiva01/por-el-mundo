@@ -5,8 +5,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Por el Mundo: Un Blog de Viajes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,36 +20,36 @@
 
     <div id="main">
 
-        <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+      <div id="intro">
 
-          <div class="container">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark nav-colored nav-transparent px-5" style="color: #fff;">
 
-              <button type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
-              class="navbar-toggler" aria-controls="#navigationBar" aria-expanded="false" aria-label="toggle navigationBar">
-              <span class="navbar-toggler-icon"></span></button>
+          <a class="nav-link" href="index.html">POR EL MUNDO</a>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" 
+          data-bs-target="#navigationBar" aria-controls="#navigationBar" 
+          aria-expanded="bg-secondary" aria-label="toggle navigationBar">
+          <span class="navbar-toggler-icon"></span>
+          </button>
 
               <div class="collapse navbar-collapse" id="navigationBar">
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item active">
-                    <a class="nav-link text-white me-2" href="#">Inicio</a>
+                    <a class="nav-link text-white" href="#page">Inicio</a>
                   </li>
 
                   <div class="vr"></div>
 
                    <li class="nav-item active">
-                     <a class="nav-link text-white px-4" href="#">Destinos</a>
+                     <a class="nav-link text-white" href="destinos.html">Destinos</a>
                    </li>
 
                    <div class="vr"></div>
 
                    <li class="nav-item active">
-                    <a class="nav-link text-white ms-2" href="#">Contacto</a>
+                    <a class="nav-link text-white" href="#footer">Contacto</a>
                    </li>
-                </div>
-
-                <div class="logo list-unstyled">
-                  <a class="nav-link" href="#">POR EL MUNDO</a>
                 </div>
                    <!-- <li class="nav-item dropdown active">
                      <a href="#" class="nav-link dropdown-toggle"
@@ -61,79 +61,213 @@
                        <li><a href="#" class="dropdown-item">Item #3</a></li>
                    </li> -->
                 </ul>
-          </div>
         </nav>
 
-            <div id="intro">
+            
 
               <div class="d-flex flex-column justify-content-center align-items-center"
                   style="background-image: url('img/background.jpg');
                   height: 100vh; background-size: cover;">
 
-                <h1 id="title" class="text-center text-white px-5 mb-3">Por el Mundo: Un Blog de Viajes</h1>
+                <h1 id="title" class="text-center text-white px-5 mb-3">POR EL MUNDO: Un Blog de Viajes</h1>
 
                 <div class="d-grid gap-2">
-                  <button id="btn" type="button" class="btn btn-outline-light btn-lg m-2">Comenzar</button>
+                  <a href="#page">
+                    <button id="btn" type="button" class="btn btn-outline-light btn-lg m-2">Comenzar</button>
+                  </a>
                 </div>
 
               </div>
 
+      </div>
+
+
+        <div id="page">
+
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5 px-3">
+            <a class="nav-link" href="index.html">POR EL MUNDO</a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" 
+             data-bs-target="#navbarNav" aria-controls="#navbarNav" 
+             aria-expanded="bg-secondary" aria-label="toggle navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse mx-3" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#page">Inicio</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contacto</a>
+                </li>
+              </ul>
             </div>
+          </nav>
 
+          <div class="container pt-5">
+            <div class="row">
+             <div class="col-md-6 mx-auto" style="background-color: white; border-radius: 5px;">
+              <h1 class="text-center m-4">POR EL MUNDO</h1>
+             </div>
+            </div>
+          </div>
 
-            <div id="page" class="card m-5">
-              <div class="row">
-                  <div class="col-md-4">
-                    <img src="img/headshot.jpg" class="headshot img-fluid p-2 min-vh-50 d-flex align-items-center" alt="headshot">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">Biografía</h3>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et Praesent tristique magna sit amet purus gravida quis blandit turpis. Egestas sed tempus urna et pharetra pharetra massa massa. Pellentesque nec nam aliquam sem et tortor consequat. Quis commodo odio aenean sed. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Id diam vel quam elementum pulvinar etiam non quam. Enim ut tellus elementum sagittis vitae. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Lacus viverra vitae congue eu consequat ac felis.</p>  
-                      <button class="btn btn-outline-dark">Leer Mas</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title p-2">SOBRE EL BLOG</h5>
+                      <div class="col-md-9">
+                        <img src="img/plane.jpg" class="plane img-fluid p-2 min-vh-50 d-flex align-items-center" style="max-width: auto;">
+                      </div>
+                      <p class="card-text p-2">Click aquí para ver mas sobre el blog!</p>
+                      <button class="btn btn-outline-dark p-2">Leer Más</button>
                     </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title p-2">DESTINOS</h5>
+                    <div class="col-md-9">
+                      <img src="img/faro.jpg" class="faro img-fluid p-2 min-vh-50 d-flex" alt="headshot">
+                    </div>
+                    <p class="card-text p-2">Click aquí para explorar destinos!</p>
+                    <button class="btn btn-outline-dark p-2">Leer Más</button>
                   </div>
-
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title p-2">BIOGRAFÍA DEL AUTOR</h5>
+                    <div class="col-md-9">
+                      <img src="img/headshot.jpg" class="headshot img-fluid p-2 min-vh-50 d-flex" alt="headshot">
+                    </div>
+                    <p class="card-text p-2">Click aquí para aprender mas del autor!</p>
+                    <button class="btn btn-outline-dark p-2">Leer Más</button>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
+          <hr class="line mx-5"/>
 
-                <div>
+            <div>
 
-                  <h1 class="text-center m-3 mb-5">Destinos Destacados</h1>
+             <h1 class="text-left m-4 mx-5">Destinos Destacados</h1>
 
-                    <div>
-                      <a href="#">
-                        <img src="img/buenosaires.jpg" id="buenosAiresPhoto" class="img-fluid m-0" style="width: auto;" alt="Responsive image">              
-                      </a>
-                      <p id="buenosAiresText">The city of Buenos Aires is neither part of Buenos Aires Province nor the Province's capital; rather, it is an autonomous district. In 1880, after decades of political infighting, Buenos Aires was federalized and removed from Buenos Aires Province.[13] The city limits were enlarged to include the towns of Belgrano and Flores; both are now neighborhoods of the city.</p>
-                    </div>
+            <h5 class="text-left mt-5 mx-5 mb-3">Buenos Aires, Argentina</h5>
+            <div class="thumbnailRight">
+              <a class="d-flex align-items-center" href="#">
+                <img src="img/buenosaires.jpg" class="img-fluid" style="width: auto; max-height: 80%;" alt="Responsive image">
+                <div class="thumbnailTextRight px-5 text-muted" style="transform: translateY(70%);">Click aquí para leer más sobre Buenos Aires</div>  
+              </a>
+            </div>
+
+            <h5 class="text-left mt-5 mx-5 mb-1 mb-3">Rotorua, Nueva Zelanda</h5>
+            <div class="thumbnailLeft">
+               <a href="#">
+                  <img src="img/nuevazelanda.jpg" class="img-fluid" style="width: auto; max-height: 80%;" alt="Responsive image">  
+                  <div class="thumbnailTextLeft px-5 text-muted">Click aquí para leer más sobre Rotorua</div>               
+                </a>
+            </div>
       
-                    <div>
-                      <a href="#">
-                        <img src="img/nuevazelanda.jpg" class="nuevazelanda img-fluid" style="width: auto; max-width: auto;" alt="Responsive image">               
-                      </a>
-                    </div>
-      
-                    <div>
-                      <a href="#">
-                        <img src="img/algarve.jpg" class="algarve img-fluid m-0" style="width: auto;" alt="Responsive image">                
-                      </a>
-                    </div>
-      
-                    <div>
-                      <a href="#">
-                        <img src="img/madrid.JPEG" class="madrid img-fluid" style="width: auto;" alt="Responsive image">                
-                      </a>
-                    </div>
+            <h5 class="text-left mt-5 mx-5 mb-1 mb-3">Madrid, España</h5>
+            <div class="thumbnailRight">
+              <a href="#">
+                <img src="img/madrid.JPEG" class="img-fluid" style="width: auto; max-height: 80%;" alt="Responsive image">                
+                <div class="thumbnailTextRight px-5 text-muted">Click aquí para leer más sobre Madrid</div>               
+              </a>
+            </div>
 
-                </div>   
-
+          </div>   
+        </div>
 
     </div> <!--end of main-->
+
+   
+  
+      <footer id="footer" class="m-5">
+
+        <br>
+        <hr class="line mx-5"/>
+  
+      <section class="mb-4">
+  
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
+  
+            <p class="text-center w-responsive mx-auto mb-5">Estemos en contacto! Para mensajes y consultas llenar el formulario a continuacion: </p>
+  
+            <div class="row">
+  
+        <div class="align-items-center mb-md-0 mb-5">
+            <form id="formulario" name="formulario" action="contacto.php" method="POST">
+  
+                <div class="row">
+  
+                    <div class="col-md-6">
+                        <div class="md-form mb-2">
+                          <label for="name" class="">Nombre</label>
+                          <input type="text" id="nombre" name="nombre" class="form-control">
+                        </div>
+                    </div>
+  
+                    <div class="col-md-6">
+                        <div class="md-form mb-2">
+                          <label for="email" class="">Email</label>
+                          <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+  
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-2">
+                          <label for="subject" class="">Asunto</label>
+                          <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="row">
+  
+                    <div class="col-md-12">
+  
+                        <div class="md-form mb-2">
+                          <label for="message">Mensaje</label>
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+  
+                    </div>
+                </div>
+  
+            </form>
+  
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary m-3" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+  
+        <h6 class="text-center p-3">Página web creada por Micaela Leiva. Se reservan todos los derechos de autor. <br>
+        <a href="#">Click aqui</a> para ver repositorio de GitHub.</h6>
+  
+      </footer>
     
     <script src="scripts/main.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="js/bootstrap.min.js"></script> 
+    <script> $(function(){ $('.nav-tabs a:first').tab('show'); }); </script>
   </body>
 
   </html>
