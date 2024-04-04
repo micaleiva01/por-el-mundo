@@ -20,7 +20,7 @@
                   height: 100vh; background-size: cover;">
 
     <div class="pb-3">
-        <nav class="navbar fixed-top navbar-expand-sm nav-transparent">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark nav-colored nav-transparent">
 
             <div class="container">
   
@@ -44,7 +44,7 @@
                      <div class="vr" style="color: #fff;"></div>
   
                      <li class="nav-item active">
-                      <a class="nav-link text-white ms-2" style="font-family: Josefin Sans" href="#footer">Contacto</a>
+                      <a class="nav-link text-white ms-2" style="font-family: Josefin Sans" href="#contact">Contacto</a>
                      </li>
                   </div>
   
@@ -97,73 +97,75 @@
   
       </div>
 
-      <br>
-      <hr class="line mx-5"/>
-  
-      <footer id="footer" class="m-5">
-  
+      <div id="contact" class="m-5">
+
+        <hr class="line m-5"/>
+    
       <section class="mb-4">
-  
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
-  
-            <p class="text-center w-responsive mx-auto mb-5">Estemos en contacto! Para mensajes y consultas llenar el formulario a continuacion: </p>
-  
-            <div class="row">
-  
-        <div class="align-items-center mb-md-0 mb-5">
-            <form id="formulario" name="formulario" action="contacto.php" method="POST">
-  
+    
+       <div class="row">
+    
+        <div class="contact-form d-flex">
+            <form id="formulario" name="formulario" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="ae753e20-adb5-4deb-9294-f7832ce6cbaa">
+    
+              <h2 class="h1-responsive font-weight-bold my-4" style="font-weight: 700;">CONTACTO</h2>
+    
+              <p class="w-responsive mx-auto mb-5">Estemos en contacto! Para mensajes y preguntas llenar el formulario a continuación: </p>
+    
+    
                 <div class="row">
-  
+    
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                          <label for="name" class="">Nombre</label>
-                          <input type="text" id="nombre" name="nombre" class="form-control">
+                          <input type="text" id="nombre" name="nombre" placeholder="Your Name" class="contact-inputs" required>
                         </div>
                     </div>
-  
+    
+                  </div>
+    
+                  <div class="row">
+    
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                          <label for="email" class="">Email</label>
-                          <input type="text" id="email" name="email" class="form-control">
+                          <input type="text" id="email" name="email" placeholder="Your Email" class="contact-inputs" required>
                         </div>
                     </div>
-  
+    
                 </div>
-  
+    
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-2">
-                          <label for="subject" class="">Asunto</label>
-                          <input type="text" id="subject" name="subject" class="form-control">
+                          <input type="text" id="subject" name="subject" placeholder="Subject" class="contact-inputs" required>
                         </div>
                     </div>
                 </div>
-  
+    
                 <div class="row">
-  
+    
                     <div class="col-md-12">
-  
+    
                         <div class="md-form mb-2">
-                          <label for="message">Mensaje</label>
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <textarea type="text" id="message" name="message" placeholder="Write your message here" rows="2" class="contact-inputs md-textarea" required></textarea>
                         </div>
-  
+    
                     </div>
                 </div>
-  
+    
+                <button type="submit">Submit</button>
+    
             </form>
-  
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary m-3" onclick="document.getElementById('contact-form').submit();">Enviar</a>
-            </div>
-            <div class="status"></div>
-        </div>
-  
-        <h6 class="text-center p-3">Página web creada por Micaela Leiva. Se reservan todos los derechos de autor. <br>
-        <a href="#">Click aqui</a> para ver repositorio de GitHub.</h6>
-  
-      </footer>
+    
+          </div> 
+        </section>
+    </div>
+    
+    <footer id="footer" class="m-5">
+      <h6 class="text-center p-3">Página web creada por Micaela Leiva. Se reservan todos los derechos de autor. <br>
+      <a href="#">Click aqui</a> para ver repositorio de GitHub.</h6>
+    
+    </footer>
 
 <script src="scripts/buenosaires.js"></script> 
 </body>

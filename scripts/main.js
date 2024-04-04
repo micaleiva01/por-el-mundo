@@ -1,15 +1,15 @@
 var elementIntro = document.getElementById("intro");
 let btn = document.getElementById("btn");
 var elementPage = document.getElementById("page");
-var elementFooter = document.getElementById("footer");
+var elementContact = document.getElementById("contact");
 
 elementPage.style.display = "none";
-elementFooter.style.display = "none";
+elementContact.style.display = "none";
 elementIntro.style.display = "block";
 
 //shows website
 btn.onclick = function showPage() {
     elementIntro.style.display = "none";
     elementPage.style.display = "block";
-    elementFooter.style.display = "block";
+    elementContact.style.display = "block";
 };
