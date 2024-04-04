@@ -67,6 +67,7 @@ div.scroll {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-family: 'Josefin Sans', 'Serif';
 }
 
 .contact-inputs {
@@ -78,6 +79,15 @@ div.scroll {
   border-radius: 10px;
   border-width: 1px;
   border-color: #f2a880;
+  font-family: 'Josefin Sans', 'serif';
+}
+
+.contacttitle {
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.contacttext {
+  font-family: 'Josefin Sans', 'Serif';
 }
 
 @media screen and (max-width: 690px){

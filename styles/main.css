@@ -59,6 +59,7 @@ button:hover{
   color:#000;
   transition: right 1s ease;
   z-index: -1;
+  font-family: 'Josefin Sans', 'serif';
 }
 
 .thumbnailTextLeft {
@@ -69,6 +70,8 @@ button:hover{
   color:#000;
   transition: left 1s ease;
   z-index: -1;
+  font-family: 'Josefin Sans', 'serif';
+
 }
 
 .thumbnailRight:hover img {
@@ -118,6 +121,7 @@ button:hover{
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-family: 'Josefin Sans', 'serif';
 }
 
 .contact-inputs {
@@ -129,6 +133,15 @@ button:hover{
   border-radius: 10px;
   border-width: 1px;
   border-color: #f2a880;
+  font-family: 'Josefin Sans', 'serif';
+}
+
+.contacttitle {
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.contacttext {
+  font-family: 'Josefin Sans', 'serif';
 }
 
 @media screen and (max-width: 690px){
